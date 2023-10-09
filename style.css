@@ -1,0 +1,779 @@
+
+/* Agregar el fondo de la pagina en una imagen*/
+
+body {
+   
+     background-color: white;
+    
+}
+
+/*Titulo fondo imagen */
+
+.fondo-title{
+    background-image: url(https://i.pinimg.com/564x/47/aa/e8/47aae8aed2ae7de9ec8c2f626497de51.jpg);
+    background-position: center;  /*centar el fondo*/
+    background-size: cover; /*Tamaño, cubrir*/
+    background-repeat: no-repeat; /*No se repita la imagen*/
+    margin:30px; /*Margen que tendra la imagen de todos los  bordes*/
+    height: 300px; /*Altura de la imagen*/
+    display: flex; /*Añade propiedades extras*/
+    justify-content: center; /*Centra el contenido horizontalmente (texto)*/
+    align-items: center; /*Centra el contenido verticalemnete (texto)*/
+}
+
+
+/*titulo animacion y efeccto de las letras*/
+.animation-title{
+    text-align: center;
+     font-family: 'Dancing Script', cursive; /* Agregamos la familia de la fuente*/
+    color: transparent; /*Colocamos el color */
+    font-size: 200px; /*Tamaño de la fuente*/
+    font-weight: 500; /*Grosor de la letra*/
+    letter-spacing: -0.015em; /* que tan separadas queremos las letras*/
+    background-image: linear-gradient(
+        180deg, /*Indica que ira de arriba a abajo*/
+        #001f54, /*Color de arriba*/
+        #009be2/*Color de abajo*/
+    );
+    background-clip:text; /*Fondo se expande al texto*/
+    -webkit-background-clip:text;
+    margin-top: 1px;
+    /*Animacion del titulo*/
+    animation: rubberBand; /* Nombre de la animacion que deseamos colocar */
+    animation-duration: 3s; /*Duracion de la animacion*/
+
+} 
+
+/*Frase introductoria a la pagina */
+
+.div-frase{
+
+    justify-content: center; /*Centramos el contenido del div (texto)*/
+    margin-left: 100px; /*Margen izquierdo*/
+    margin-right: 100px; /*Margen derecho*/
+
+}
+
+.frase{
+
+    font-family: 'Dancing Script', cursive; /*Fuente de la letra*/
+    font-size: 50px; /*Tamaño de la letra*/
+    color: black; /*Color*/
+    text-align: center; /*Alineacion del texto en el centro*/
+    margin-top: 10px; /*Margen superior*/
+}
+
+
+/* primera seccion de la pagina principal, sobre nosotros */
+
+/*Titulo de la seccion*/
+
+.about{
+
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; /*Fuente del texto*/
+    font-size: 50px; /*Tamaño del texto*/
+    text-align: center; /*Posicion del texto*/
+
+}
+
+/*Card*/
+
+/*Imagen de la card*/
+.cardmb-3{
+    display: flex; /*Añadimos propiedades extras*/
+    justify-content: center; /*Centramos el contendio de la card*/
+    align-items: center; /*Alineamos el contenido verticalmente */
+    margin-left: 120px; /*margen izquierdo*/
+}
+
+/*Texto del card*/
+
+.card-text{
+
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; /*Fuente del texto*/
+    font-size: 25px; /*Tamaño del texto*/
+    align-items: center; /*Posicion del texto*/
+}
+
+
+
+
+/*Seccion categorias*/
+
+/*Titulo de la seccion*/
+.cat{
+
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; /*Fuente del texto */
+    font-size: 50px; /*Tamaño del texto */
+    justify-content: center; /*Texto centrado*/
+    align-items: center; /*Centrar*/
+    text-align: center; /*Centrar*/
+}
+
+/*Div de las cards*/
+.cards{
+
+    margin-left: 50px; /*Margen izquierdo*/
+    display: flex; /*Añadimos propiedades extras*/
+    justify-content: space-evenly;  /*Colocar horizontalmente las cards*/
+   
+}
+
+/*Titulos de las cards*/
+.card-title{
+    text-align: center; /*Centrar*/
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; /*Fuente del texto */
+    font-size: 30px; /*Fuente del texto */
+}
+
+/*Texto de las cards*/
+.cards .card-text{
+    
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; /*Fuente del texto */
+    font-size: 20px; /*Tamaño del texto */
+    text-align: center; /*Centrar*/
+}
+
+/*Boton de las cards (anclas tipo boton)*/
+.cards .btn{
+    
+    background-color: #bb9457 ; /*Fondo del boton*/
+    border-color: #99582a; /*Borde el boton*/
+    border-radius: 15px; /*Redondear los bordes*/
+    display: block; /*cambia el comportamiento del elemento a bloque, ocupando todo el ancho disponible y colocándose en una nueva línea */
+    text-align: center; /*Centrar*/
+    margin: 0 auto; /*Margen automatico*/
+    color: black; /*Color del texto, cambia cuando se pasa el mouse*/
+}
+
+
+/*Footer*/
+
+
+footer {
+    background-color: #c6ac8f; /* Color de fondo del footer */
+    color: #fff; /* Color del texto en el footer */
+    padding: 20px 0; /* Espaciado interior en el footer */
+  }
+  
+  /* l contenido del footer */
+  .footer-content {
+    display: flex; /*Propiedades extras*/
+    justify-content: space-between; /*Tener elementos en columnas*/
+    align-items: center; /*Centrar*/
+    max-width: 1200px; /*Maxima anchura*/
+    margin: 0 auto; /*Margen automatico*/
+    padding: 0 20px; /*Espaciado interior en el footer*/
+  }
+  
+  /*seccion magen izquierda*/
+  .footer-logo img {
+    width: 100px; /* Ajusta el tamaño del logo */
+  }
+  
+  /*Imagen logo*/
+  .img-logo{
+    height: 50px; /*Altura*/
+    width: 15px; /*Ancho*/
+  }
+
+  /*Parrafo debajo del logo*/
+  .footer-logo p {
+    font-size: 14px; /*Tamaño de texto */
+  }
+  
+  /*Links medios del footer*/
+  .footer-links ul {
+    list-style: none; /*Quitamos puntos de la lista*/
+    padding: 0;
+  }
+  
+  /*Elemntos de la lista*/
+  .footer-links ul li {
+    margin-bottom: 10px;
+  }
+  
+  /*Anclas*/
+  .footer-links a {
+    text-decoration: none; /*Quitamos el subrayado*/
+    color: #fff; /*color del texto*/
+    font-weight: bold; /*Texto en negritas*/
+    font-size: 14px; /*Tamaño del texto*/
+    transition: color 0.3s; /*Tiempo para cambiar el color del texto*/
+  }
+  
+  /*Efecto del cursor*/
+  .footer-links a:hover {
+    color: #007bff; /* Cambia el color al pasar el cursor por encima */
+  }
+  
+  /*Seccion de redes sociales*/
+  .footer-social p {
+    font-size: 14px; /*Tamaño de letra*/
+    margin-bottom: 10px; /*Margen inferior*/
+  }
+  
+  /*Anclas de redes sociales*/
+  .footer-social a {
+    margin-right: 10px; /* Espacio entre los iconos de redes sociales */
+  }
+  
+  
+  /*div Copyright del footer*/
+  .footer-copyright {
+    text-align: center; /*Centrar*/
+    padding-top: 10px; /*Padding del elemento*/
+    font-size: 12px; /*Tamaño del texto */
+  }
+  
+  /*Texto del copyright*/
+  .footer-copyright p {
+    margin: 0; /*Margen*/
+  }
+  
+
+/*********************************************************************************************************************/
+/**************CATEGORIAS*******************/
+
+/*Romance*/
+.title-rom h1{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 100px;
+    text-align: center;
+}
+
+.libros .first-book{
+    margin-top: 10px;
+    margin-left: 120px;
+    margin-right: 120px;
+    background-color: #9d8189;
+    display:flex;
+}
+
+.libros .first-book-content .title{
+    display: flex;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    margin-left: 350px; 
+}
+
+.libros .first-book-content .content .resena{
+    display: flex;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    justify-content: center;
+    margin: 50px;
+    
+}
+
+
+.libros .second-book{
+    margin-top: 10px;
+    margin-left: 120px;
+    margin-right: 120px;
+    background-color: #f4acb7;
+    display:flex;
+    
+}
+
+.libros .second-book img{
+
+    margin-top: 50px;
+    width: 230px;
+
+}
+
+.libros .third-book{
+    margin-top: 10px;
+    margin-left: 120px;
+    margin-right: 120px;
+    background-color: #ffcad4;
+    display:flex;
+    
+}
+
+.libros .third-book img{
+
+    margin-top: 40px;
+    width: 230px;
+
+}
+
+
+.libros .fourd-book{
+    margin-top: 10px;
+    margin-left: 120px;
+    margin-right: 120px;
+    background-color: #ffe5d9;
+    display:flex;
+    
+}
+
+.libros .fourd-book img{
+
+    margin-top: 40px;
+    width: 230px;
+
+}
+
+
+/*Ciencia Ficcion*/
+
+
+.ficcion .first-book{
+    margin-top: 10px;
+    margin-left: 120px;
+    margin-right: 120px;
+    background-color: #588157;
+    display:flex;
+}
+
+
+.ficcion .first-book-content .title{
+    display: flex;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    margin-left: 350px; 
+}
+
+.ficcion .first-book-content .content .resena{
+    display: flex;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    justify-content: center;
+    margin: 50px;
+    
+}
+
+
+.ficcion .second-book{
+    margin-top: 10px;
+    margin-left: 120px;
+    margin-right: 120px;
+    background-color: #a3b18a;
+    display:flex;
+    
+}
+
+.ficcion .second-book img{
+
+    margin-top: 15px;
+    width: 230px;
+
+}
+
+.ficcion .third-book{
+    margin-top: 10px;
+    margin-left: 120px;
+    margin-right: 120px;
+    background-color: #dad7cd;
+    display:flex;
+    
+}
+
+.ficcion .third-book img{
+
+    width: 230px;
+
+}
+
+
+/*Terror*/
+
+.terror .first-book{
+    margin-top: 10px;
+    margin-left: 120px;
+    margin-right: 120px;
+    background-color: #495057;
+    display:flex;
+}
+
+
+.terror .first-book-content .title{
+    display: flex;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    margin-left: 350px; 
+    color: white;
+}
+
+.terror .first-book-content .content .resena{
+    display: flex;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    justify-content: center;
+    margin: 50px;
+    color:white
+    
+}
+
+
+.terror .second-book{
+    margin-top: 10px;
+    margin-left: 120px;
+    margin-right: 120px;
+    background-color: #6c757d;
+    display:flex;
+    
+}
+
+.terror .second-book .imagen2 img{
+
+    margin-top: 0px;
+    width: 200px;
+    height: 290px;
+
+}
+
+.terror .third-book{
+    margin-top: 10px;
+    margin-left: 120px;
+    margin-right: 120px;
+    background-color: #adb5bd;
+    display:flex;
+    
+}
+
+.terror .third-book img{
+
+    width: 210px;
+    height: 300px;
+}
+
+/*Novelas*/
+
+
+.novelas .first-book{
+    margin-top: 10px;
+    margin-left: 120px;
+    margin-right: 120px;
+    background-color: #2a9d8f;
+    display:flex;
+}
+
+.novelas .first-book .imagen1 img{
+  
+    width: 200px;
+}
+.novelas .first-book-content .title{
+    display: flex;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    margin-left: 350px; 
+    color: black;
+}
+
+.novelas .first-book-content .content .resena{
+    display: flex;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    justify-content: center;
+    margin: 50px;
+    color: black;
+    
+}
+
+
+.novelas .second-book{
+    margin-top: 10px;
+    margin-left: 120px;
+    margin-right: 120px;
+    background-color: #e9c46a;
+    display:flex;
+    
+}
+
+.novelas .second-book .imagen2 img{
+
+    margin-top: 0px;
+    width: 200px;
+    height: 290px;
+
+}
+
+
+
+.novelas .third-book{
+    margin-top: 10px;
+    margin-left: 120px;
+    margin-right: 120px;
+    background-color: #f4a261;
+    display:flex;
+    
+}
+
+.novelas .third-book img{
+
+    width: 210px;
+    height: 300px;
+    margin-top: 10px;
+}
+
+
+
+.novelas .fourd-book{
+    margin-top: 10px;
+    margin-left: 120px;
+    margin-right: 120px;
+    background-color: #e76f51;
+    display:flex;
+    
+}
+
+.novelas .fourd-book img{
+
+    width: 210px;
+    height: 350px;
+    margin-top: 15px;
+}
+
+/*Fantasia*/
+
+
+
+.fantasia .first-book{
+    margin-top: 10px;
+    margin-left: 120px;
+    margin-right: 120px;
+    background-color: #9b5de5;
+    display:flex;
+}
+
+.fantasia .first-book .imagen1 img{
+  
+    margin-top: 20px;
+    width: 200px;
+}
+.fantasia .first-book-content .title{
+    display: flex;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    margin-left: 350px; 
+    color: black;
+}
+
+.fantasia .first-book-content .content .resena{
+    display: flex;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    justify-content: center;
+    margin: 50px;
+    color: black;
+    
+}
+
+
+.fantasia .second-book{
+    margin-top: 10px;
+    margin-left: 120px;
+    margin-right: 120px;
+    background-color: #f15bb5;
+    display:flex;
+    
+}
+
+.fantasia .second-book .imagen2 img{
+
+    margin-top: 2px;
+    width: 200px;
+    height: 290px;
+
+}
+
+
+
+.fantasia .third-book{
+    margin-top: 10px;
+    margin-left: 120px;
+    margin-right: 120px;
+    background-color: #fee440;
+    display:flex;
+    
+}
+
+.fantasia .third-book img{
+
+    width: 210px;
+    height: 300px;
+}
+
+
+
+.fantasia .fourd-book{
+    margin-top: 10px;
+    margin-left: 120px;
+    margin-right: 120px;
+    background-color: #00bbf9;
+    display:flex;
+    
+}
+
+.fantasia .fourd-book img{
+
+    width: 210px;
+    height: 350px;
+}
+
+.fantasia .five-book{
+    margin-top: 10px;
+    margin-left: 120px;
+    margin-right: 120px;
+    background-color: #00f5d4;
+    display:flex;
+    
+}
+
+.fantasia .five-book img{
+
+    width: 210px;
+    height: 350px;
+}
+
+/*Misterio*/
+
+
+.misterio .first-book{
+    margin-top: 10px;
+    margin-left: 120px;
+    margin-right: 120px;
+    background-color: #bc4b51;
+    display:flex;
+}
+
+.misterio .first-book .imagen1 img{
+  
+    margin-top: 1px;
+    width: 200px;
+    height: 280px;
+}
+.misterio .first-book-content .title{
+    display: flex;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    margin-left: 350px; 
+    color: black;
+}
+
+.misterio .first-book-content .content .resena{
+    display: flex;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    justify-content: center;
+    margin: 50px;
+    color: black;
+    
+}
+
+
+.misterio .second-book{
+    margin-top: 10px;
+    margin-left: 120px;
+    margin-right: 120px;
+    background-color: #5b8e7d;
+    display:flex;
+    
+}
+
+.misterio .second-book .imagen2 img{
+
+    margin-top: 60px;
+    margin-left: 10px;
+    width: 200px;
+    height: 290px;
+
+}
+
+
+
+.misterio .third-book{
+    margin-top: 10px;
+    margin-left: 120px;
+    margin-right: 120px;
+    background-color: #8cb369;
+    display:flex;
+    
+}
+
+.misterio .third-book img{
+
+    width: 210px;
+    height: 300px;
+    margin-top: 15px;
+}
+
+/*Superacion Personal*/
+
+
+.sup-personal .first-book{
+    margin-top: 10px;
+    margin-left: 120px;
+    margin-right: 120px;
+    background-color: #9d4edd;
+    display:flex;
+}
+
+.sup-personal .first-book .imagen1 img{
+  
+    margin-top: 1px;
+    width: 200px;
+    height: 280px;
+}
+.sup-personal .first-book-content .title{
+    display: flex;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    margin-left: 350px; 
+    color: black;
+}
+
+.sup-personal .first-book-content .content .resena{
+    display: flex;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    justify-content: center;
+    margin: 50px;
+    color: black;
+    
+}
+
+
+.sup-personal .second-book{
+    margin-top: 10px;
+    margin-left: 120px;
+    margin-right: 120px;
+    background-color: #c77dff;
+    display:flex;
+    
+}
+
+.sup-personal .second-book .imagen2 img{
+
+   
+    margin-left: 10px;
+    width: 200px;
+    height: 290px;
+
+}
+
+.sup-personal .third-book{
+    margin-top: 10px;
+    margin-left: 120px;
+    margin-right: 120px;
+    background-color: #e0aaff;
+    display:flex;
+    
+}
+
+.sup-personal .third-book img{
+
+    width: 210px;
+    height: 300px;
+    margin-top: 15px;
+}
